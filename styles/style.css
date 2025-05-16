@@ -12,9 +12,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  inline-size: 1200px;
+  min-height: 100vh;
   block-size: 100%;
-  height: max-content;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -97,7 +96,6 @@ ol {
 
 .content {
   display: grid;
-  margin: 130px auto;
   grid-template-columns: 711px 399px;
   grid-template-areas: 'result content__details';
   align-items: end;
@@ -229,7 +227,7 @@ input:checked ~ .search-form__pseudo-checkbox::after {
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
-  margin-bottom: 30px;
+  margin-bottom: 17px;
   text-transform: uppercase;
 }
 
@@ -249,6 +247,10 @@ input:checked ~ .search-form__pseudo-checkbox::after {
 .content__list {
   display: grid;
   gap: 30px;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
 
 /* -------------Template------------------------------- */
